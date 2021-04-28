@@ -1,0 +1,9 @@
+<h1 class="text-center my-5">商品カテゴリー編集</h1>
+<hr>
+<div class="offset-2 col-8">
+  <%= form_with(model: @category, local: true) do |form| %>
+    <%= form.label "カテゴリー名前", for: "name" %>
+    <%= form.text_field(:name, id: "name") %>
+    <%= form.submit "送信" %>
+  <% end %>
+</div>
